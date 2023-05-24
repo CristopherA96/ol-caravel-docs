@@ -93,8 +93,11 @@ $ echo "export OPENLANE_ROOT=\"/home/\$USER/eda_tools/OpenLane\"" >> ~/.bashrc
 $ echo "export PDK_ROOT=\"\$OPENLANE_ROOT/pdks\"" >> ~/.bashrc              
 $ echo "export PDK_PATH=\"\$PDK_ROOT/sky130A\"" >> ~/.bashrc         
 
-$ echo "alias mup=make user_proj_example" >> ~/.bashrc
-$ echo "alias mupw=make user_project_wrapper" >> ~/.bashrc
+$ echo "alias mup=\"make user_proj_example\"" >> ~/.bashrc
+$ echo "alias mupw=\"make user_project_wrapper\"" >> ~/.bashrc
+
+; # Refresh environment variables
+$ source ~/.bashrc                                              
 
 ; # Install Caravel
 
